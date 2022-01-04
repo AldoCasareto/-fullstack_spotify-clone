@@ -11,7 +11,7 @@ const PlayerLayout = ({ children }) => {
         {children}
       </Box>
       <Box position="absolute" bottom="0" left="0">
-        player
+        wew player
       </Box>
     </Box>
   );
