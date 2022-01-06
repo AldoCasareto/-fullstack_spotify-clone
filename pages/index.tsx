@@ -1,15 +1,18 @@
 import { Box, Flex, Text } from "@chakra-ui/layout";
 import { Image } from "@chakra-ui/react";
 import GradientLayout from "../components/gradientLayout";
+import { useMe } from "../lib/hooks";
 import prima from "../lib/prisma";
 
 const Home = ({ artists }) => {
+  const { user } = useMe();
+
   return (
     <GradientLayout
       roundImage
       color="gray"
-      title="aldo casareto"
-      description="hello world"
+      title={`${user?.firstName} ${user?.lastName}`}
+      description={`${user?.playlistsCount} public playlists`}
       subtitle="profile"
       image="https://avatars.githubusercontent.com/u/71019940?s=400&u=a9956b1b566e12534a7ec3b031389eac01014075&v=4"
     >

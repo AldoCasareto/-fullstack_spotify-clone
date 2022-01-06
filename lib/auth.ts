@@ -24,3 +24,8 @@ export const validateRoute = (handler) => {
     return res.status(401).json({ error: "Invalid credentials" });
   };
 };
+
+export const validateToken = (token) => {
+  const user = jwt.verify(token, "hello");
+  return user;
+};
