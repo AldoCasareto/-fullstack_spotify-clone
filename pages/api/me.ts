@@ -7,8 +7,6 @@ export default validateRoute(async (req, res, user) => {
       userId: user.id,
     },
   });
-  res.json({
-    ...user,
-    playlistsCount,
-  });
+
+  res.json({ ...user, playlistsCount });
 });
