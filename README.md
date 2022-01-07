@@ -1,5 +1,9 @@
 First nextJS project. Music Player
 
+https://fullstack-musicplayer.vercel.app/playlist/1
+
+Only the playlist 1 has songs. It is a work in process project still
+
 username: user@test.com
 password: password
 
